@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="IC.master.cs" Inherits="IC" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>IC Meeting</title>
+    <script src="js/SYSTEM/jquery-1.7.1.min.js"></script>
+    <script src="js/SYSTEM/jquery-ui-1.8.17.custom.min.js" type="text/javascript"></script>
+    <script src="js/master.js?<%= System.IO.File.GetLastWriteTime(Server.MapPath("js/master.js")).Ticks.ToString() %>"></script>
+    <script src="js/SYSTEM/common.js?<%= System.IO.File.GetLastWriteTime(Server.MapPath("js/SYSTEM/common.js")).Ticks.ToString() %>"></script>
+    <link href="css/master.css?<%= System.IO.File.GetLastWriteTime(Server.MapPath("css/master.css")).Ticks.ToString() %>" rel="stylesheet" />
+    <link href="css/smoothness/jquery-ui-1.8.17.custom.css" rel="stylesheet"/>
+    <asp:ContentPlaceHolder id="headContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <h2>Investment Committee Meeting Notes</h2>
+      
+  
+        <asp:ContentPlaceHolder id="mainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
