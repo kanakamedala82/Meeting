@@ -1,0 +1,50 @@
+﻿
+ul.tab {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.tab li {
+    margin: 0;
+    padding: 0;
+    float: left;
+    height: 25px; text-align: center;
+}
+ul.tab a.active {
+    background: linear-gradient(225deg, transparent 10px, #588933 10px);
+    cursor: default;
+}
+
+ul.tab a {
+    box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
+    background: linear-gradient(225deg, transparent 10px, #888888 10px);
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+    color: white;
+    float: left;
+    font: bold 12px/35px 'Lucida sans', Arial, Helvetica;
+    height: 32px;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+h2 {
+    background: #588933;
+    -webkit-box-shadow: 0 0 0 0px lightgrey, 0 2px 2px black;
+       -moz-box-shadow: 0 0 0 0px lightgrey, 0 2px 2px black;
+            box-shadow: 0 0 0 0px lightgrey, 0 2px 2px black;
+            color: #ffffff;
+            font-family: CustomFont;
+            font-weight: normal;
+            font-size: 14pt;
+            font-weight:bold;
+            padding: 5px 15px;
+            margin: 0;
+            margin-bottom: 15px;
+}
+.tabmenu{
+    height:32px;
+    border-bottom: solid 2px #888888;
+    min-width: 1600px;
+}
